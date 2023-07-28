@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.page-actions-container {
+    height: 2rem;
+    background-color: #006722;
+    display: flex;
+    align-items: center;
+}
+
+.page-actions-container>*:hover {
+    cursor: pointer;
+}
+
+.page-action {
+    /* height: 2rem; */
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.selected-page-action {
+    height: 2rem;
+    width: 4rem;
+    background-color: #f8e4b7;
+    color: #006722;
+}
+
+.cellproperty-action-container {
+    height: 2rem;
+    background-color: #f8e4b7;
+    display: flex;
+    align-items: center;
+}
+
+.cellproperty-action-container>*:hover {
+    cursor: pointer;
+}
+
+.cellproperty-action-container>select {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.material-symbols-outlined {
+    margin: 0.2rem;
+}
+
+.font-family-property {
+    margin: 1rem;
+    padding: 0.2rem;
+}
+
+.color-property>*:hover {
+    cursor: pointer;
+}
+
+.font-size-property {
+    padding: 0.2rem;
+}
+
+.formula-action-container {
+    height: 2rem;
+    background-color: #f8e4b7;
+    display: flex;
+    align-items: center;
+}
+
+.address-bar {
+    margin-left: 1rem;
+    width: 7rem;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.formula-bar {
+    height: 1.5rem;
+    width: 89.5%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.sheet-action-container {
+    height: 2rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.sheet-action-container>* {
+    display: inline-block;
+}
+
+.sheet-add-icon>* {
+    width: 2vw;
+}
+
+.sheet-add-icon:hover {
+    cursor: pointer;
+}
+
+.sheets-folder-container {
+    display: flex;
+    height: 80%;
+    width: calc(100vw - 2vw);
+    align-items: center;
+    overflow: auto;
+}
+
+.sheet-folder {
+    margin-right: 0.5rem;
+    height: 80%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet-folder:hover {
+    cursor: pointer;
+}
+
+.grid-container {
+    height: calc(100vh - 2rem - 2rem - 2rem - 2em);
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+}
+
+.top-left-dummy {
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    background-color: grey;
+    z-index: 5;
+}
+
+.address-column-container {
+    position: sticky;
+    top: 2rem;
+    left: 0;
+}
+
+.address-row-container {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
+
+}
+
+.cells-container {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+
+.address-col {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 1.5px solid #718093;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+
+.address-row {
+    height: 2rem;
+    width: 5rem;
+    border: 1.5px solid #718093;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.row-container {
+    display: flex;
+}
+
+.cell {
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dcdde1;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.color-property {
+    position: relative;
+}
+
+.color-property>input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
